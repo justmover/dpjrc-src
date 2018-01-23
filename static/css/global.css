@@ -1,0 +1,76 @@
+.font-14 {
+    font-size: 14pt;
+}
+.dpjrc-green-body-bg {
+    background-color: #e8f0c7;
+}
+.dpjrc-green-bg {
+    background-color: #006838;
+}
+
+.dpjrc-lightgreen-bg {
+    background-color: #00a750;
+}
+.dpjrc-btn-primary {
+    background: #00a750;
+    width: 100px;
+    border: none;
+    color: white;
+}
+
+
+.white {
+    color: white;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+
+/* main view width */
+.main-container {
+    max-width: 1024px; 
+    margin:0 auto;
+    /* border: solid black 1px; */
+}
+/* home page style */
+.desktop-nav {
+    width: 100%;
+}
+
+.home-container {
+    position: relative;
+}
+.home-container .story {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.home-container .course-overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0px;
+    right: 0px;
+    width: 300px;
+    height: 600px;
+    color: white;
+}
+.home-container .course-overlay div {
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    width: 250px;
+    transform: translate(-50%,-50%);
+}
+
+.home-container .course-overlay .course-title {
+    font-size: 32pt;
+}
+.home-container .course-overlay .course-slogan {
+    font-size: 15pt;
+}
+.home-container .course-overlay .course-description {
+    font-size: 11pt;
+}

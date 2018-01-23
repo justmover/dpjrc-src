@@ -1,0 +1,11 @@
+<html>
+{{ partial "head" . }}
+    <body class="dpjrc-green-body-bg center">
+        <div class="main-container">           
+            {{ partial "header" . }}
+            <main class="content" role="main">
+                {{ block "main" . }}{{ end }}
+            </main>
+        </div>
+    </body>
+</html>

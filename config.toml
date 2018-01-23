@@ -1,3 +1,54 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "My New Hugo Site"
+
+[[menu.main]]
+name = "緣起"
+weight = "1"
+identifier = "intro"
+url = "/intro/intro"
+
+[[menu.main]]
+name = "課程介紹"
+weight = "2"
+identifier = "course"
+url = "/intro/intro"
+
+[[menu.main]]
+name = "常見問題"
+weight = "3"
+identifier = "qa"
+url = "/intro/intro"
+
+[[menu.main]]
+name = "生命故事"
+weight = "4"
+identifier = "story"
+url = "/intro/intro"
+
+[[menu.main]]
+name = "感謝機構及導師"
+weight = "5"
+identifier = "team"
+url = "/intro/intro"
+
+[[menu.main]]
+name = "合作機構"
+weight = "6"
+identifier = "organization"
+url = "/intro/intro"
+
+[[menu.main]]
+name = "聯絡我們"
+weight = "7"
+identifier = "contactus"
+url = "/intro/intro"
+
+[[menu.main]]
+name = "自在社"
+weight = "8"
+identifier = "dp"
+url = "/intro/intro"
+
+
+

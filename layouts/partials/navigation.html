@@ -1,0 +1,13 @@
+{{ $menus:= .Site.Menus }} {{ if $menus}}
+<div class="menu desktop-menu">
+    {{ range .Site.Menus.main }} {{ $menuName := .Name }} {{ $menuTitle := .Identifier }}
+        <div class="menu-item" id="menu-{{$menuTitle}}">
+            <a href="{{ .URL}}">
+            <img width="30" src="/img/menu_{{$menuTitle}}_btn.svg">
+            {{ $menuName }}
+            </a>
+        </div>
+    {{ end }}
+
+</div>
+{{ end }}

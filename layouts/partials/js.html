@@ -1,0 +1,22 @@
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $(".desktop-showMenu").hide();
+        $(".desktop-nav-hamburger-btn").click(function () {
+            $(".desktop-showMenu").slideToggle('fast');
+        });
+    });
+
+</script>
+
+<script>
+    $(document).ready(function () {
+        $(".menu-item").mouseover(function () {
+            $("#" + this.id).addClass('active');
+        });
+        $(".menu-item").mouseout(function () {
+            $("#" + this.id).removeClass('active');
+        });
+    });
+</script>

@@ -32,7 +32,6 @@
 .main-container {
     max-width: 1024px; 
     margin:0 auto;
-    /* border: solid black 1px; */
 }
 /* home page style */
 .desktop-nav {
@@ -43,7 +42,7 @@
     position: relative;
 }
 .home-container .story {
-    position: absolute;
+    position: relative;
     top: 0px;
     left: 0px;
 }
@@ -73,4 +72,32 @@
 }
 .home-container .course-overlay .course-description {
     font-size: 11pt;
+}
+
+.home-btn {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    top: -30px;
+}
+.home-btn .style1 {
+    background-color: #009da5;
+    padding: 4.5% 0;
+}
+.home-btn .style2 {
+    background-color: #5093cf;
+    padding: 4.5% 0;
+}
+
+.home-btn div p {
+    margin-top: 15px;
+    font-size: 14pt;
+    color: white;
+}
+
+.desktop-footer .contact-us {
+    font-size: 12pt;
+}
+.desktop-footer .copy-right {
+    font-size: 10pt;
 }

@@ -14,8 +14,8 @@
 .dpjrc-btn-primary {
     background: #00a750;
     width: 100px;
-    border: none;
     color: white;
+    display:inline-block
 }
 
 
@@ -33,10 +33,32 @@
     max-width: 1024px; 
     margin:0 auto;
 }
-/* home page style */
+/* desktop nav bar style */
+
 .desktop-nav {
     width: 100%;
+    position: relative;
 }
+.desktop-nav-hamburger-btn {
+    position: absolute;
+    right: 2%;
+    bottom: 15%;
+}
+
+/* mobile nav bar style */
+.mobile-nav {
+    width: 100%;
+    position: relative;
+}
+
+.mobile-nav-hamburger-btn {
+    position: absolute;
+    right: 1%;
+    bottom: 3%;
+}
+
+
+/* home page style */
 
 .home-container {
     position: relative;

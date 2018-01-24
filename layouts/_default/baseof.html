@@ -3,7 +3,7 @@
     <body class="dpjrc-green-body-bg">
         <div class="main-container">           
             {{ partial "header" . }}
-            <main class="content" role="main">
+            <main {{if ne .Section "home"}} class="content"{{end}} role="main">
                 {{ block "main" . }}{{ end }}
             </main>
             {{ partial "footer" . }}

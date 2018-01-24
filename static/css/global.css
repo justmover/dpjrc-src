@@ -1,6 +1,12 @@
 .font-14 {
     font-size: 14pt;
 }
+.font-21{
+    font-size: 21pt;
+}
+.font-27{
+    font-size: 27pt;
+}
 
 .dpjrc-green-body-bg {
     background-color: #e8f0c7;
@@ -271,4 +277,106 @@ main.content {
 }
 .team-detail-content{
     font-size: 15pt;
+}
+
+.intro-year-bg1 {
+    background-color: #8bc53f;
+}
+.intro-year-bg2 {
+    background-color: #37b34a;
+}
+.intro-year-bg3 {
+    background-color: #009345;
+}
+.intro-year-bg4 {
+    background-color: #006838;
+}
+.intro-year-content {
+    color: #3b2314;
+    font-size: 15pt;
+}
+.fab-circle {
+    background-color: #009da5;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 6px;
+    position: fixed;
+    right: 5%;
+    cursor: pointer;
+}
+.fab-1 {
+    bottom: 200px;
+}
+.fab-2 {
+    bottom: 150px;
+}
+.fab-3 {
+    bottom: 100px;
+}
+.fab-4 {
+    bottom: 50px;
+}
+.fab-logo {
+    width: 20px;
+}
+
+
+.faq {
+   
+}
+
+.faq ul {
+    list-style: none !important;
+    width:80%;
+    margin: 3% 10% !important;
+}
+
+.faq li {
+    padding: 20px;
+}
+
+.faq li.q {
+    background-color: #929497;
+    font-weight: bold;
+    font-size: 120%;
+    border-bottom: 1px #ddd solid;
+    cursor: pointer;
+}
+
+.faq li.q font {
+    font-size: 18pt;
+    color: white
+}
+
+.faq li.q img {
+    min-width: 20px;
+    margin: 10px;
+    display: inline;
+    float: right;
+}
+
+.faq li.a {
+    display: none;
+    color: black;
+}
+
+.faq li.a font {
+    font-size: 13pt;
+}
+
+.rotate {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.chosenFaq {
+    background-color: #00a750 !important;
+}
+
+.faq .contact {
+    text-align: center;
+    color: #009da5;
+    font-size: 33pt;
 }

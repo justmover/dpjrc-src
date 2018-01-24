@@ -185,9 +185,25 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8f0c7', endColorstr='#ffffff', GradientType=0);
 }
 
-.thanks-text-center{
+.thanks-text-center {
     text-align: center;
 }
+
+.contact-icon {
+    margin-right: 10px !important;
+    width: 25px !important;
+}
+
+.contact-map {
+    position: relative;
+    text-align: center;
+}
+
+.contact-list {
+    list-style-type: none !important;
+    margin-left: 20% !important;
+}
+
 main.content {
     background-color: white;
     background-image: url('/img/bg_stamp.svg');
@@ -199,36 +215,44 @@ main.content {
 }
 
 /* team page style */
-.team-container{
+
+.team-container {
     position: relative;
     padding-bottom: 100pt;
 }
-.team-text-center{
+
+.team-text-center {
     text-align: center;
 }
-.team-coloumns-margin{
-    margin-top: 10pt !important;
-    margin-bottom: 10pt !important;
+
+.team-coloumns-margin {
+    margin-top: 1% !important;
+    margin-bottom: 1% !important;
 }
-.team-title-left{
+
+.team-title-left {
     font-size: 15pt;
     padding: 0 !important;
     background-color: #006838;
     color: white;
-}       
-.team-title-right{
+}
+
+.team-title-right {
     font-size: 15pt;
     padding: 0 !important;
     background-color: #009da5;
     color: white;
 }
-.team-no-padding{
+
+.team-no-padding {
     padding: 0 !important;
 }
-.team-img-column{
+
+.team-img-column {
     position: relative;
 }
-.team-img-column .team-intro{
+
+.team-img-column .team-intro {
     color: white;
     margin: 0;
     position: absolute;
@@ -238,32 +262,37 @@ main.content {
     transform: translate(-50%, 0);
     font-size: 10pt;
 }
-.team-img-column .team-more-container{
+
+.team-img-column .team-more-container {
     text-align: center;
     position: absolute;
     bottom: 25pt;
     width: 100%;
     /* display: none !important; */
 }
-.team-img-column .team-more-container .team-more{
+
+.team-img-column .team-more-container .team-more {
     text-align: center;
     color: white;
     border: white solid 1px;
-    width: 60%;    
+    width: 60%;
     font-size: 14pt;
 }
-.team-hover-container{
+
+.team-hover-container {
     height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.3);    
+    background-color: rgba(0, 0, 0, 0.3);
     display: none;
 }
-.team-img-column:hover .team-hover-container{
+
+.team-img-column:hover .team-hover-container {
     display: block;
 }
-.team-name{
+
+.team-name {
     font-size: 14pt;
     color: black;
 }

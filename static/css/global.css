@@ -195,14 +195,14 @@ main.content {
 /* team page style */
 .team-container{
     position: relative;
-    padding-bottom: 5%;
+    padding-bottom: 100pt;
 }
 .team-text-center{
     text-align: center;
 }
 .team-coloumns-margin{
-    margin-top: 1% !important;
-    margin-bottom: 1% !important;
+    margin-top: 10pt !important;
+    margin-bottom: 10pt !important;
 }
 .team-title-left{
     font-size: 15pt;
@@ -259,4 +259,9 @@ main.content {
 }
 .team-name{
     font-size: 14pt;
+    color: black;
+}
+.team-img-270px{
+    background-repeat: no-repeat;
+    height: 270px;
 }

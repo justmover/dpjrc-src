@@ -272,3 +272,62 @@ main.content {
 .team-detail-content{
     font-size: 15pt;
 }
+
+.faq {
+   
+}
+
+.faq ul {
+    list-style: none !important;
+    width:80%;
+    margin: 3% 10% !important;
+}
+
+.faq li {
+    padding: 20px;
+}
+
+.faq li.q {
+    background-color: #929497;
+    font-weight: bold;
+    font-size: 120%;
+    border-bottom: 1px #ddd solid;
+    cursor: pointer;
+}
+
+.faq li.q font {
+    font-size: 18pt;
+    color: white
+}
+
+.faq li.q img {
+    min-width: 20px;
+    margin: 10px;
+    display: inline;
+    float: right;
+}
+
+.faq li.a {
+    display: none;
+    color: black;
+}
+
+.faq li.a font {
+    font-size: 13pt;
+}
+
+.rotate {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.chosenFaq {
+    background-color: #00a750 !important;
+}
+
+.faq .contact {
+    text-align: center;
+    color: #009da5;
+    font-size: 33pt;
+}

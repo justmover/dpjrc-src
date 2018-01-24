@@ -42,7 +42,7 @@ url = "/thanks/thanks"
 name = "聯絡我們"
 weight = "7"
 identifier = "contactus"
-url = "/intro/intro"
+url = "/contact/contact"
 
 [[menu.main]]
 name = "自在社"

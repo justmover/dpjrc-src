@@ -1,13 +1,60 @@
 {{ define "main" }}
-<div>
-   緣起 background
-</div>
-<!--dynamic-->
-<div>
-    自在社是.......
-</div>
-<!-- hard code -->
-<div>
-    icon description
+<div class="intro-bg">
+    <img class="pages-banner" src="/img/intro_banner.png">
+    <!--dynamic-->
+    <div class="columns is-centered">
+        <div class="column is-7 font-21">
+            {{ .Content }}
+        </div>
+    </div>
+    <!-- FAB -->
+    {{ partial "fab" . }}
+    <!-- hard code -->
+    <div class="columns text-center">
+        <div class="column">
+            <img class="is-hidden-mobile" src="/img/tree1.png">
+            <div class="intro-year-bg1 white font-27">
+                2014年
+            </div>
+            <div class="columns is-centered">
+                <div class="column is-10 intro-year-content">
+                    自在社開始探訪喜靈州在囚戒毒人士,開展單對單的生命教練服務,效果甚佳,許多在囚人士都得到很大支持。
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <img class="is-hidden-mobile" src="/img/tree2.png">
+            <div class="intro-year-bg2 white font-27">
+                2016年
+            </div>
+            <div class="columns is-centered">
+                <div class="column is-10 intro-year-content">
+                    自在社與基督教新生協會,簽訂協議書,攜手服務更生人士。
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <img class="is-hidden-mobile" src="/img/tree3.png">
+            <div class="intro-year-bg3 white font-27">
+                2017年初
+            </div>
+            <div class="columns is-centered">
+                <div class="column is-10 intro-year-content">
+                    周華山博士與28位DP生命教練,支持28位戒毒康復者與更生人士,讓參加者體驗到生命轉化的力量。往後,自在社開展多元化的服務,支持過來人面對戒毒和更生之路。由於自在社生命教練的服務,成績斐然。
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <img class="is-hidden-mobile" src="/img/tree4.png">
+            <div class="intro-year-bg4 white font-27">
+                2017年11月
+            </div>
+            <div class="columns is-centered">
+                <div class="column is-10 intro-year-content">
+                    獲得香港賽馬會贊助,開展為期三年的青年更生教練課程,培訓約200位過來人,轉化生命,並成為生命教練,支持其他過來人。
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 {{ end }}

@@ -1,6 +1,12 @@
 .font-14 {
     font-size: 14pt;
 }
+.font-21{
+    font-size: 21pt;
+}
+.font-27{
+    font-size: 27pt;
+}
 
 .dpjrc-green-body-bg {
     background-color: #e8f0c7;
@@ -271,4 +277,46 @@ main.content {
 }
 .team-detail-content{
     font-size: 15pt;
+}
+
+.intro-year-bg1 {
+    background-color: #8bc53f;
+}
+.intro-year-bg2 {
+    background-color: #37b34a;
+}
+.intro-year-bg3 {
+    background-color: #009345;
+}
+.intro-year-bg4 {
+    background-color: #006838;
+}
+.intro-year-content {
+    color: #3b2314;
+    font-size: 15pt;
+}
+.fab-circle {
+    background-color: #009da5;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 6px;
+    position: fixed;
+    right: 5%;
+    cursor: pointer;
+}
+.fab-1 {
+    bottom: 200px;
+}
+.fab-2 {
+    bottom: 150px;
+}
+.fab-3 {
+    bottom: 100px;
+}
+.fab-4 {
+    bottom: 50px;
+}
+.fab-logo {
+    width: 20px;
 }

@@ -1,0 +1,49 @@
+{{ define "main" }}
+<div class="course-container">
+    <div class="bg">
+        <img class="pages-banner" src="/img/course_banner.png" />
+    </div>
+    <!-- course detail -->
+    {{ range where .Data.Pages ".Title" "course-detail" }}
+    <div class="columns course-detail text-center">
+        <div class="is-offset-3 column is-4 title">
+            <div class="text-center">
+                <p>
+                    賽馬會青年更新教練課程
+                </p>
+            </div>
+            <div class="text-center">
+                <a href="{{ .Params.joinlink}}" target="_blank"><img src="/img/join_btn.png"/></a>
+            </div>
+        </div>
+        <div class="column is-5 table">
+            <div class="columns">
+                <div class="column is-4 table-title">開課日期</div>
+                <div class="column is-8">{{ .Params.coursedate }}</div>
+            </div>
+            <div class="columns">
+                <div class="column is-4 table-title">修業期</div>
+                <div class="column is-8">{{ .Params.limit }}</div>
+            </div>
+            <div class="columns">
+                <div class="column is-4 table-title">教學語言</div>
+                <div class="column is-8">{{ .Params.language}}</div>
+            </div>
+            <div class="columns">
+                <div class="column is-4 table-title">上課地點</div>
+                <div class="column is-8">{{ .Params.location }}</div>
+            </div>
+        </div>
+    </div>
+    {{ end }}
+    <!-- course intro -->
+    {{ range where .Data.Pages ".Title" "course-intro" }}
+    <div class="course-container">
+        <div class="course-intro margin-0-auto">
+            {{ .Content }}
+        </div>
+    </div>
+    {{end}}
+
+</div>
+{{ end }}

@@ -12,7 +12,7 @@ url = "/intro/intro"
 name = "課程介紹"
 weight = "2"
 identifier = "course"
-url = "/course/course"
+url = "/course"
 
 [[menu.main]]
 name = "常見問題"

@@ -18,7 +18,7 @@ url = "/course"
 name = "常見問題"
 weight = "3"
 identifier = "qa"
-url = "/faq/"
+url = "/faq/faq"
 
 [[menu.main]]
 name = "生命故事"

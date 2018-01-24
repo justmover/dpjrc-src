@@ -1,0 +1,34 @@
+{{ define "main" }}
+<div class="faq">
+    <img src="/img/JCicon.png">
+    <div>
+        <img class="pages-banner" src="/img/Q&A_banner.png">
+        <ul>
+            {{range $index, $content := .Params.question}}
+            <li id="faq{{$index}}" class="q">
+
+                <div class="columns">
+                    <div class="column is-11">
+                        <font>{{ add $index 1}}﹑{{$content.title}}</font>
+                    </div>
+                    <div class="column is-1 arrow-container">
+                        <img src="/img/arrow.svg">
+                    </div>
+                </div>
+            </li>
+
+            <li class="a">
+                <font>{{$content.ans}}</font>
+            </li>
+            {{end}}
+
+        </ul>
+    </div>
+
+
+    <div class="contact">
+        <font>仍有問題? 聯絡我們</font>
+    </div>
+</div>
+
+{{ partial "footer" . }} {{ end }}

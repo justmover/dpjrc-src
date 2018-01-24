@@ -19,4 +19,43 @@
             $("#" + this.id).removeClass('active');
         });
     });
+
+</script>
+
+
+<!-- for faq -->
+<script>
+    var action = 'click';
+    var speed = "500";
+    chosen = '';
+    $(document).ready(function () {
+
+        $('li.q').on(action, function (e) {
+
+            $(this).next().slideToggle(speed)
+
+
+                .siblings('li.a').slideUp();
+
+            if (chosen != '' && chosen != e.currentTarget.id) {
+                $('li.q').removeClass('chosenFaq')
+            }
+
+
+            // Grab img from clicked question
+            var img = $(this).children('div.columns').children('div.arrow-container').children('img')
+
+            // remove Rotate class from all images except the active
+            $('img').not(img).removeClass('rotate');
+
+            // toggle rotate class
+            img.toggleClass('rotate');
+
+
+            $('#' + e.currentTarget.id).toggleClass('chosenFaq');
+            chosen = e.currentTarget.id;
+          
+        });
+    });
+
 </script>

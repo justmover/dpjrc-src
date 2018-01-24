@@ -24,7 +24,7 @@ url = "/faq/"
 name = "生命故事"
 weight = "4"
 identifier = "story"
-url = "/intro/intro"
+url = "/story"
 
 [[menu.main]]
 name = "導師及總教練團隊"

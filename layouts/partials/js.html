@@ -59,3 +59,27 @@
     });
 
 </script>
+<!-- for story -->
+<script>
+        var active = '';
+        $(document).ready(function () {
+    
+            active = $('.start-up-active')[0].id;
+            console.log(active);
+            $('#' + active + '_content').addClass('story-container-show');
+            active = active ;
+            $('.story-video').on('click', function (e) {
+                if (active != "") {
+                    $('#' + e.currentTarget.id + '_content').addClass('story-container-show');
+                    $('#' + active+ '_content').toggleClass('story-container-show');
+                }
+                console.log("event: " + e.currentTarget.id);
+                $('#' + e.currentTarget.id + '_content').toggleClass('story-container-show');
+                $('#' + active+ '_content').toggleClass('story-container-show');
+                console.log("now id:" + active)
+                active = e.currentTarget.id;
+    
+            })
+        });
+    
+    </script>

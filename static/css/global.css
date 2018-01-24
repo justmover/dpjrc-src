@@ -109,7 +109,7 @@
     left: 0px;
 }
 
-.home-container .course-overlay {text-align
+.home-container .course-overlay {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.6);
     top: 0px;
@@ -264,4 +264,11 @@ main.content {
 .team-img-270px{
     background-repeat: no-repeat;
     height: 270px;
+}
+.team-detail-name{
+    font-size: 18pt;
+    font-weight: bold;
+}
+.team-detail-content{
+    font-size: 15pt;
 }

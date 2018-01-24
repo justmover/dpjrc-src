@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div>
+    <div class="team-container">
+        <div class="pages-banner">
+            <img src="/img/team_banner.png">
+        </div>
+        <div class="columns is-centered is-multiline">
+            <div class="column is-3 team-text-center">
+                <img src="{{ .Params.img }}">
+            </div>
+            <div class="column is-5">
+                <span class="team-detail-name">{{.Params.chinese_name}} </span>
+                <br>
+                <span class="team-detail-name">{{.Params.english_name}} </span>
+                <br>
+                <br>
+                <div class="team-detail-content">
+                    {{.Content}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}

@@ -12,7 +12,7 @@ url = "/intro/intro"
 name = "課程介紹"
 weight = "2"
 identifier = "course"
-url = "/intro/intro"
+url = "/course/course"
 
 [[menu.main]]
 name = "常見問題"
@@ -27,16 +27,16 @@ identifier = "story"
 url = "/intro/intro"
 
 [[menu.main]]
-name = "感謝機構及導師"
+name = "導師及總教練團隊"
 weight = "5"
 identifier = "team"
-url = "/intro/intro"
+url = "/team/team"
 
 [[menu.main]]
-name = "合作機構"
+name = "感謝機構及導師"
 weight = "6"
 identifier = "organization"
-url = "/intro/intro"
+url = "/thanks/thanks"
 
 [[menu.main]]
 name = "聯絡我們"

@@ -380,3 +380,37 @@ main.content {
     color: #009da5;
     font-size: 33pt;
 }
+
+
+.course-container .course-content { 
+    max-width: 900px; 
+ 
+} 
+.course-container .course-content .title { 
+    font-size: 28pt; 
+    color: 009da5; 
+    text-align: center; 
+ 
+} 
+.course-container .course-content .title div a { 
+  display: block;
+  width: 100%;
+} 
+ 
+.course-container .course-content .detail { 
+    background-color: #ddffd2; 
+    text-align: left; 
+    font-size: 15pt; 
+    
+} 
+
+.course-container .course-content .detail .columns  { 
+    margin: 2px 0px;
+}
+ 
+.course-container .course-content .detail-title  { 
+    background-color: #00a750; 
+    color: white; 
+    margin-bottom: 2px; 
+ 
+}

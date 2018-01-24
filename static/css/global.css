@@ -155,3 +155,72 @@
 .desktop-footer .copy-right {
     font-size: 10pt;
 }
+
+/* team page style */
+.team-container{
+    position: relative;
+    padding-bottom: 5%;
+}
+.team-text-center{
+    text-align: center;
+}
+.team-coloumns-margin{
+    margin-top: 1% !important;
+    margin-bottom: 1% !important;
+}
+.team-title-left{
+    font-size: 15pt;
+    padding: 0 !important;
+    background-color: #006838;
+    color: white;
+}       
+.team-title-right{
+    font-size: 15pt;
+    padding: 0 !important;
+    background-color: #009da5;
+    color: white;
+}
+.team-no-padding{
+    padding: 0 !important;
+}
+.team-img-column{
+    position: relative;
+}
+.team-img-column .team-intro{
+    color: white;
+    margin: 0;
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10pt;
+}
+.team-img-column .team-more-container{
+    text-align: center;
+    position: absolute;
+    bottom: 25pt;
+    width: 100%;
+    /* display: none !important; */
+}
+.team-img-column .team-more-container .team-more{
+    text-align: center;
+    color: white;
+    border: white solid 1px;
+    width: 60%;    
+    font-size: 14pt;
+}
+.team-hover-container{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);    
+    display: none;
+}
+.team-img-column:hover .team-hover-container{
+    display: block;
+}
+.team-name{
+    font-size: 14pt;
+}

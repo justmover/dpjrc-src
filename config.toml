@@ -1,54 +1,43 @@
 baseURL = "http://jockeyclubyrs.dreamspossible.hk/"
 languageCode = "en-us"
 title = "My New Hugo Site"
-
 [[menu.main]]
-name = "緣起"
-weight = "1"
-identifier = "intro"
-url = "/intro/intro"
-
-[[menu.main]]
-name = "課程介紹"
-weight = "2"
-identifier = "course"
-url = "/course"
-
-[[menu.main]]
-name = "常見問題"
-weight = "3"
-identifier = "qa"
-url = "/faq/faq"
-
-[[menu.main]]
-name = "生命故事"
-weight = "4"
-identifier = "story"
-url = "/story"
-
-[[menu.main]]
-name = "導師及總教練團隊"
-weight = "5"
-identifier = "team"
-url = "/team/team"
-
-[[menu.main]]
-name = "感謝機構及導師"
-weight = "6"
-identifier = "organization"
-url = "/thanks/thanks"
-
-[[menu.main]]
-name = "聯絡我們"
-weight = "7"
-identifier = "contactus"
-url = "/contact/contact"
-
-[[menu.main]]
-name = "自在社"
-weight = "8"
 identifier = "dp"
+name = "自在社"
+url = "http://www.dreamspossible.hk"
+weight = 8
+[[menu.main]]
+identifier = "contactus"
+name = "聯絡我們"
+url = "/contact/contact"
+weight = 7
+[[menu.main]]
+identifier = "organization"
+name = "感謝機構及導師"
+url = "/thanks/thanks"
+weight = 6
+[[menu.main]]
+identifier = "team"
+name = "導師及總教練團隊"
+url = "/team/team"
+weight = 5
+[[menu.main]]
+identifier = "story"
+name = "生命故事"
+url = "/story"
+weight = 4
+[[menu.main]]
+identifier = "qa"
+name = "常見問題"
+url = "/faq/faq"
+weight = 3
+[[menu.main]]
+identifier = "course"
+name = "課程介紹"
+url = "/course"
+weight = 2
+[[menu.main]]
+identifier = "intro"
+name = "緣起"
 url = "/intro/intro"
-
-
-
+weight = 1

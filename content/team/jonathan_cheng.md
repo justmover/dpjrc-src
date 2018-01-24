@@ -1,10 +1,11 @@
 ---
 title: jonathan_cheng
 chinese_name: "鄭建性博士"
-english_name: "Dr Jonathan Cheng"
+english_name: Dr Jonathan Cheng
 layout: team_detail
 img: "/img/team-04.jpg"
 draft: true
+
 ---
 學歷：學士、碩士及博士學位均於香港大學完成，1987年畢業社會科學系，雙主修經濟學及社會學；大學畢業後，加入《香港電台》擔任助理節目主任，之後從事新聞工作超過十年，期間亦曾服務《亞洲電視》及《壹周刊》。於2000年，離開新聞行業，時任《亞洲電視》副新聞採訪主任。隨即和著名財經分析員陳永陸及鄧聲興等，成立財星資訊公司駿陸控股有限公司，出任行政總裁及創始股東．該公司2002 年在創業板上市。鄭博士亦曾為香港董事學會會員。
 

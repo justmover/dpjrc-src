@@ -1,9 +1,10 @@
 ---
 title: chou_wah_shan
 chinese_name: "周華山博士"
-english_name: "Dr Chou Wah Shan"
+english_name: Dr Chou Wah Shan
 layout: team_detail
 img: "/img/team-02.jpg"
 draft: true
+
 ---
 英國約克大學社會學博士，曾在理工大學(1988-1991年)和香港大學(1994-1998年)教授社會學與心理分析，著書30本。1999年，到雲南山區「女兒國」生活了四年，進行學術研究，返港後在一間情緒病友協會做總幹事。周華山擁有心理劇治療、情緒治理、家庭治療、催眠治療等專業訓練證書；2006年創辦自在社，2014年與幾位身心靈前輩發起身心靈平台。

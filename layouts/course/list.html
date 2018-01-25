@@ -4,6 +4,8 @@
         <img class="pages-banner is-hidden-mobile" src="/img/course_banner.png" />
         <img class="pages-banner is-hidden-tablet" src="/img/course_banner_mobile.png" />
     </div>
+    <!-- FAB -->
+    {{ partial "fab" . }}
     <!-- course detail -->
     {{ range where .Data.Pages ".Title" "course-detail" }}
     <div class="columns course-detail text-center">

@@ -71,6 +71,20 @@
     bottom: 15%;
 }
 
+/* mobile nav bar style */
+
+.mobile-nav {
+    width: 100%;
+    position: relative;
+}
+
+.mobile-nav-hamburger-btn {
+    position: absolute;
+    right: 1%;
+    bottom: 3%;
+}
+
+
 /* desktop menu bar style */
 
 .desktop-menu {
@@ -106,17 +120,18 @@
     padding: 0.75rem 2.75rem;
 }
 
-/* mobile nav bar style */
+/* for mobile display */
+@media screen and (max-width: 768px) {
+    .desktop-menu {
+        width: 100%;
+        padding: 8% 0;
+        background-position-x: 135%;
+        background-position-y: 35px;
+    }
 
-.mobile-nav {
-    width: 100%;
-    position: relative;
-}
-
-.mobile-nav-hamburger-btn {
-    position: absolute;
-    right: 1%;
-    bottom: 3%;
+    .desktop-menu .menu-item a {
+        margin: 0 auto;
+    }
 }
 
 /* home page style */

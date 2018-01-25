@@ -13,19 +13,23 @@
 
 <script>
     $(document).ready(function () {
+        // Desktop menu 
         $(".desktop-showMenu").hide();
         $(".desktop-nav-hamburger-btn").click(function () {
             $(".desktop-showMenu").slideToggle('fast');
         });
-    });
 
-</script>
+        // Mobile menu 
+        $(".mobile-showMenu").hide();
+        $(".mobile-nav-hamburger-btn").click(function () {
+            $(".desktop-showMenu").slideToggle('fast');
+        });
 
-<script>
-    $(document).ready(function () {
+        // Menu mouseover
         $(".menu-item").mouseover(function () {
             $("#" + this.id).addClass('active');
         });
+        // Menu mouseout
         $(".menu-item").mouseout(function () {
             $("#" + this.id).removeClass('active');
         });

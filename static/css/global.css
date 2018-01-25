@@ -42,6 +42,11 @@
     margin: 0 auto;
 }
 
+.link-decoration {
+    text-decoration: none !important;
+    color: black;
+}
+
 /* main view width */
 
 .main-container {
@@ -178,6 +183,7 @@
 
 .desktop-footer .contact-us {
     font-size: 12pt;
+    color: black;
 }
 
 .desktop-footer .copy-right {
@@ -437,7 +443,7 @@ main.content {
 .course-container .course-detail .table { 
     background-color: #ddffd2; 
     text-align: left; 
-    font-size: 15pt; 
+    font-size: 14pt; 
     
 } 
 
@@ -450,6 +456,64 @@ main.content {
     color: white; 
     margin-bottom: 2px; 
 }
+
+.course-container .course-intro { 
+    max-width: 650px; 
+} 
+
+.course-container .course-intro h2 {
+    background-image: url('/img/course_down_arrow.svg');
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    display: block;
+    font-size: 20pt;
+    color: #006838;
+}
+
+
+.course-container .course-intro h3 {
+    background-color: #00a750;
+    color: white;
+    width: 100%;
+}  
+
+.course-container .course-intro p {
+    margin: 0 30px;
+    font-size: 12pt;
+}
+
+.course-container .course-intro h4{
+    color: #006838;
+    font-size: 17pt;
+    margin: 0 30px;
+    margin-bottom: 20px;
+}
+
+
+.course-container .course-intro h3 a {
+    float: right;
+    color: white;
+    text-decoration: none;
+    font-size: 12pt;
+    padding: 3px 5px;
+}
+
+.course-container .course-intro h5 {
+    border: #ec1c24 1px solid;
+    background-color: #fffcdc;
+    color: #ec1c24;
+    width: 100%;
+    height: auto;
+    font-size: 12pt;
+    text-align: left;
+    padding: 2% 2%;
+}
+
+.course-container .course-intro h3 a img{
+    width: 6px;
+}
+
+
 .videoWrapper {
     position: relative;
     width: 100%;
@@ -503,57 +567,4 @@ main.content {
 .story-container-show{
     display: block !important;
 }
-
-.course-container .course-intro { 
-    max-width: 650px; 
-} 
-
-.course-container .course-intro h2 {
-    background-image: url('/img/course_down_arrow.svg');
-    background-repeat: no-repeat;
-    padding-left: 30px;
-    display: block;
-}
-
-
-.course-container .course-intro h3 {
-    background-color: #00a750;
-    color: white;
-    width: 100%;
-}  
-
-.course-container .course-intro p {
-    margin: 0 30px;
-}
-
-.course-container .course-intro h4{
-    color: #006838;
-    font-size: 17pt;
-    margin: 0 30px;
-    margin-bottom: 20px;
-}
-
-
-.course-container .course-intro h3 a {
-    float: right;
-    color: white;
-    text-decoration: none;
-    font-size: 13pt;
-    padding: 3px 5px;
-}
-
-.course-container .course-intro h5 {
-    border: #ec1c24 1px solid;
-    background-color: #fffcdc;
-    color: #ec1c24;
-    width: 100%;
-    height: 100px;
-    text-align: left;
-    padding: 4% 2%;
-}
-
-.course-container .course-intro h3 a img{
-    width: 6px;
-}
-
 

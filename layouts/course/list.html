@@ -1,7 +1,8 @@
 {{ define "main" }}
 <div class="course-container">
     <div class="bg">
-        <img class="pages-banner" src="/img/course_banner.png" />
+        <img class="pages-banner is-hidden-mobile" src="/img/course_banner.png" />
+        <img class="pages-banner is-hidden-tablet" src="/img/course_banner_mobile.png" />
     </div>
     <!-- course detail -->
     {{ range where .Data.Pages ".Title" "course-detail" }}

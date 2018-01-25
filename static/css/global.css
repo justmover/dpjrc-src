@@ -586,9 +586,9 @@ main.content {
 }
 .story-title-bar {
     background: #006838; /* Old browsers */
-    background: -moz-linear-gradient(left, #006838 0%, #ffffff 50%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #006838 0%,#ffffff 50%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #006838 0%,#ffffff 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-linear-gradient(left, #006838 0%, #ffffff 750px); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #006838 0%,#ffffff 750px); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #006838 0%,#ffffff 750px); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006838', endColorstr='#ffffff',GradientType=1 );
     margin-top: 30pt;
     margin-bottom: 30pt;
@@ -596,12 +596,21 @@ main.content {
 }
 .story-detail-container{
     width: 100%;
-    max-height: 1025px;
+    max-height: 500px;
     background-color: #05272b;
-    overflow-y: scroll;
+    overflow-y: auto;
     display: none;
 }
 .story-container-show{
     display: block !important;
 }
 
+.story-photo{
+    width:290px;
+    height:210px;
+
+}
+
+.cannotClick{
+    pointer-events: none;
+}

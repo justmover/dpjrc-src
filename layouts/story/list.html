@@ -1,10 +1,15 @@
-{{ define "main" }} 
-{{ range .Pages }}
-<div id="{{.Title}}_content" class="story-detail-container">
+{{ define "main" }} {{ range $index, $content :=.Pages }}
+<div id="{{.Title}}_content" class="story-detail-container {{if eq $index 0}} story-container-show {{end}}">
     <div style="color:white;width:100%;padding:30px calc(50% - 280px) 0px">
+        {{if .Params.videolink}}
         <div class="videoWrapper">
-            <iframe width="100%" height="265" src="{{ .Params.link}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="100%" height="265" src="{{ .Params.videolink}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
+        {{else}}
+        <div >
+            <img width="100%" height="265" src="{{ .Params.thumbnailpicture}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        {{end}}
         <div class="text-center white font-21">{{.Title}}</div>
     </div>
     <div style="color:white;width:100%;padding:30px calc(50% - 350px)">
@@ -23,14 +28,42 @@
 </div>
 
 <div class="columns is-multiline columns-no-margin">
+
     {{range $index, $content := .Pages}}
-    <div id="{{$content.Title}}" class="story-video column is-4 {{if eq $index 0}} start-up-active {{end}}">
+    <div id="{{$content.Title}}" class="story-video column is-4">
+        {{if $content.Params.videolink}}
+
         <div class="videoWrapper">
-            <iframe width="290" height="210" src="{{ $content.Params.link}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe class="cannotClick" width="290" height="210" src="{{ $content.Params.videolink}}" frameborder="0" disabled="true"
+                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
         </div>
+        {{else}}
+        <div>
+            <img width="320" height="210" src="{{ $content.Params.thumbnailpicture}}">
+        </div>
+        {{end}}
         <div class="story-video-title white text-center">{{$content.Title}}</div>
         <div class="story-video-intro">{{$content.Content}}</div>
     </div>
     {{ end }}
 </div>
+
+
+
+<script>
+    $(document).ready(function () {
+        var currentContentTitle;
+        currentContentTitle = $('.story-video')[0].id;  // on init
+        $('.story-video').on('click', function (e) {
+            if (currentContentTitle != "") {
+                $('#' + currentContentTitle + '_content').removeClass('story-container-show');   // hide current detail story
+                $('#' + e.currentTarget.id + '_content').addClass('story-container-show');  // show clicked story
+            }
+            currentContentTitle = e.currentTarget.id;
+        })
+    });
+
+</script>
+
 {{ end }}

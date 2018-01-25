@@ -2,7 +2,9 @@
 <div>
     <div class="home-container">
         <div class="story">
-            <img src="/img/photo.jpg" />
+            <a href="/story">
+                <img src="/img/photo.jpg" />
+            </a>
         </div>
         <!-- course overlay -->
         <div class="course-overlay is-hidden-touch">
@@ -15,6 +17,9 @@
                     <span class="course-slogan">
                         {{ .Params.courseslogan }}
                     </span>
+                    <!-- this is underline -->
+                    <div style="width:100%; border-bottom: 3px solid #00a750;">
+                    </div>
                     <br>
                     <span class="course-description">
                         {{ .Params.coursedescription }}

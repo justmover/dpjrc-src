@@ -20,3 +20,7 @@ fields:
   name: thumbnailpicture
   label: "標題相片"
   description: "這張相片會用作生命故事的封面"
+- type: text
+  name: videolink
+  label: "故事影片"
+  description: "請輸入 YouTube 影片網址"

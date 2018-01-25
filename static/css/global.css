@@ -30,6 +30,10 @@
     display: inline-block
 }
 
+.black {
+    color: black;
+}
+
 .white {
     color: white;
 }
@@ -44,8 +48,8 @@
 
 .link-decoration {
     text-decoration: none !important;
-    color: black;
 }
+
 
 /* main view width */
 

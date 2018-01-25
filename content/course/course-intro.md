@@ -16,10 +16,7 @@ date: 2018-01-22 14:31:51 +0800
     <div class="column is-half-desktop style1">
         <img src="/img/features_icon1.svg" />
         <p class="text-left">
-            學員得到生命教練 (Life Coach)
-            的支持和啟導,感受有人同行、陪伴的
-            力量,重整生命,發掘潛能,創造不一
-            樣的人生。
+            學員得到生命教練 (Life Coach)的支持和啟導,感受有人同行、陪伴的力量,重整生命,發掘潛能,創造不一樣的人生。
         </p>
     </div>
     <div class="column is-half-desktop style2">
@@ -31,19 +28,13 @@ date: 2018-01-22 14:31:51 +0800
     <div class="column is-half-desktop style1">
         <img src="/img/features_icon3.svg"  />
         <p class="text-left">
-            學員接觸到一群充滿愛心、正能量的生
-            命教練與同行者,擴大積極健康的生活
-            圈子,甚至可以用自己的生命感動其他
-            生命,服務、貢獻別人。
+            學員接觸到一群充滿愛心、正能量的生命教練與同行者,擴大積極健康的生活圈子,甚至可以用自己的生命感動其他生命,服務、貢獻別人。
         </p>
     </div>
     <div class="column is-half-desktop style2">
         <img src="/img/features_icon4.svg"  />
         <p class="text-left">
-            課程內容包括:轉化成長傷痛、有效管理
-            情緒、提升人際關係、創造幸福家庭、重
-            建人生目標、享受正向社群生活、貢獻社
-            會服務他人。
+            課程內容包括:轉化成長傷痛、有效管理情緒、提升人際關係、創造幸福家庭、重建人生目標、享受正向社群生活、貢獻社會服務他人。
         </p>
     </div>
 </div>

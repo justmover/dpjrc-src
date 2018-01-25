@@ -1,6 +1,6 @@
 baseURL = "http://jockeyclubyrs.dreamspossible.hk/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+languageCode = "zh-tw"
+title = "賽馬會青年更新教練計劃"
 [[menu.main]]
 identifier = "dp"
 name = "自在社"

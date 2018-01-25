@@ -1,5 +1,5 @@
 ---
-title: Home
+title: 主頁
 date: 2018-01-22 13:43:46 +0800
 layout: home
 coursetitle: "課程介紹"

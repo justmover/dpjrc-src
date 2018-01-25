@@ -1,5 +1,5 @@
 ---
-title: course-detail
+title: 課程詳情
 date: 2018-01-22 14:31:51 +0800
 coursedate: 2018年2月10日
 limit: "共16堂，約5個月"

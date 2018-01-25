@@ -13,39 +13,39 @@ date: 2018-01-22 14:31:51 +0800
 
 ## 課程特色
  <div class="columns text-center is-multiline is-desktop">
-    <a class="column is-half-desktop style1">
+    <div class="column is-half-desktop style1">
         <img src="/img/features_icon1.svg" />
-        <p>
+        <p class="text-left">
             學員得到生命教練 (Life Coach)
             的支持和啟導,感受有人同行、陪伴的
             力量,重整生命,發掘潛能,創造不一
             樣的人生。
         </p>
-    </a>
-    <a class="column is-half-desktop style2">
+    </div>
+    <div class="column is-half-desktop style2">
         <img src="/img/features_icon2.svg"  />
-        <p>
+        <p class="text-left">
             學員、教練的比例為一比一,學員可以得到最大的照顧和個人化的支持。
         </p>
-    </a>
-    <a class="column is-half-desktop style1">
+    </div>
+    <div class="column is-half-desktop style1">
         <img src="/img/features_icon3.svg"  />
-        <p>
+        <p class="text-left">
             學員接觸到一群充滿愛心、正能量的生
             命教練與同行者,擴大積極健康的生活
             圈子,甚至可以用自己的生命感動其他
             生命,服務、貢獻別人。
         </p>
-    </a>
-    <a class="column is-half-desktop style2">
+    </div>
+    <div class="column is-half-desktop style2">
         <img src="/img/features_icon4.svg"  />
-        <p>
+        <p class="text-left">
             課程內容包括:轉化成長傷痛、有效管理
             情緒、提升人際關係、創造幸福家庭、重
             建人生目標、享受正向社群生活、貢獻社
             會服務他人。
         </p>
-    </a>
+    </div>
 </div>
 
 ## 詳情

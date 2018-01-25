@@ -16,3 +16,7 @@ fields:
   type: text
   hidden: false
   default: ''
+- type: file
+  name: thumbnailpicture
+  label: "標題相片"
+  description: "這張相片會用作生命故事的封面"

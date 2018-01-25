@@ -46,6 +46,10 @@
     margin: 0 auto;
 }
 
+.margin-top-45 {
+    margin-top: 45px;
+}
+
 .link-decoration {
     text-decoration: none !important;
 }
@@ -91,7 +95,7 @@
     position: absolute;
     z-index: 999;
     right: 0;
-    width: 270px;
+    width: 300px;
     background-color: #006838;
     background-image: url('/img/menu_bg.svg');
     background-repeat: no-repeat;

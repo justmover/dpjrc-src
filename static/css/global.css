@@ -186,12 +186,22 @@
 
 .home-btn .style1 {
     background-color: #009da5;
-    padding: 4.5% 0;
+    padding: 3rem 0;
 }
 
 .home-btn .style2 {
     background-color: #5093cf;
-    padding: 4.5% 0;
+    padding: 3rem 0;
+}
+
+@media screen and (max-width: 768px) {
+    .home-btn .style1 {
+        padding: 1rem 0;
+    }
+    
+    .home-btn .style2 {
+        padding: 1rem 0;
+    }
 }
 
 .home-btn div p {
@@ -446,13 +456,6 @@ main.content {
 .chosenFaq {
     background-color: #00a750 !important;
 }
-
-.faq .contact {
-    text-align: center;
-    color: #009da5;
-    font-size: 33pt;
-}
-
 
 /* course page style */
 .course-container .course-detail { 

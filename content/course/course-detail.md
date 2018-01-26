@@ -6,6 +6,6 @@ limit: "共16堂，約5個月"
 language: "粵語，輔以中文教材"
 location: "自在社（灣仔）"
 joinlink: https://docs.google.com/forms/d/e/1FAIpQLSf1dXNbhgECimfbGd5W7napKJGcW98pbYD3ZHO804QE6ovJcg/viewform
-display: course-detail 
+display: course-detail
 
 ---

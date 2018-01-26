@@ -7,7 +7,7 @@
     <!-- FAB -->
     {{ partial "fab" . }}
     <!-- course detail -->
-    {{ range where .Data.Pages ".Title" "course-detail" }}
+    {{ range where .Data.Pages ".Params.display" "course-detail" }}
     <div class="columns course-detail text-center">
         <div class="is-offset-3 column is-4 title">
             <div class="text-center">
@@ -40,7 +40,7 @@
     </div>
     {{ end }}
     <!-- course intro -->
-    {{ range where .Data.Pages ".Title" "course-intro" }}
+    {{ range where .Data.Pages ".Params.display" "course-intro" }}
     <div class="course-container">
         <div class="course-intro margin-0-auto">
             {{ .Content }}

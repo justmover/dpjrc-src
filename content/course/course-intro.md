@@ -1,6 +1,7 @@
 ---
 title: "課程介紹"
 date: 2018-01-22 14:31:51 +0800
+display: course-intro
 
 ---
 ## 課程介紹

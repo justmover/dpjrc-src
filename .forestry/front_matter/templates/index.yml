@@ -1,6 +1,6 @@
 ---
 pages:
-- team/team.md
+- course/_index.md
 hide_body: false
 fields:
 - name: title
@@ -9,11 +9,13 @@ fields:
   hidden: false
   default: ''
   description: "顯示於瀏覽器上的標題"
-- name: layout
-  label: Layout
-  type: text
+- name: date
+  label: Date
+  type: datetime
   hidden: true
-  default: ''
+  default: Invalid date
+  config:
+    time_format: h:mm A
 - name: type
   label: Type
   type: text

@@ -1,6 +1,7 @@
 ---
 pages:
 - intro/intro.md
+- course/_index.md
 - contact/contact.md
 hide_body: false
 fields:

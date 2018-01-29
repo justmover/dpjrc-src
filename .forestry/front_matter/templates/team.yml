@@ -1,6 +1,4 @@
 ---
-pages:
-- team/team.md
 hide_body: false
 fields:
 - name: title

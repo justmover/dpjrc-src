@@ -1,5 +1,6 @@
 ---
 pages:
+- story/_index.md
 - intro/intro.md
 - course/_index.md
 - contact/contact.md

@@ -1,5 +1,6 @@
 ---
 pages:
+- intro/intro.md
 - contact/contact.md
 hide_body: false
 fields:

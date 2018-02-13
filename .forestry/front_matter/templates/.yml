@@ -1,6 +1,4 @@
 ---
-pages: 
-- home/home.md 
 hide_body: false
 fields:
 - name: title

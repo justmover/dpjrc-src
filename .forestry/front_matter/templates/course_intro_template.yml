@@ -1,4 +1,6 @@
 ---
+pages:
+- course/course-intro.md
 hide_body: false
 fields:
 - name: title

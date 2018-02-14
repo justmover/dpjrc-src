@@ -4,6 +4,7 @@ pages:
 - team/team.md
 - story/_index.md
 - intro/intro.md
+- course/course-intro.md
 - course/_index.md
 - contact/contact.md
 hide_body: false

@@ -1,14 +1,11 @@
 ---
-pages:
-- home/home.md
 hide_body: false
 fields:
 - name: title
-  label: "網頁標題"
+  label: title
   type: text
-  hidden: false
+  hidden: true
   default: ''
-  description: "會顯示於瀏覽器上的標題"
 - name: date
   label: Date
   type: datetime
@@ -21,26 +18,8 @@ fields:
   type: text
   hidden: true
   default: ''
-- name: layout
-  label: Layout
+- name: display
+  label: Display
   type: text
   hidden: true
   default: ''
-- name: coursetitle
-  label: "課程標題"
-  type: text
-  hidden: false
-  default: ''
-  description: "請輸入課程的標題"
-- name: courseslogan
-  label: "課程口號"
-  type: text
-  hidden: false
-  default: ''
-  description: "請輸入課程的口號"
-- name: coursedescription
-  label: "課程描述"
-  type: text
-  hidden: false
-  default: ''
-  description: "請描述課程的內容"

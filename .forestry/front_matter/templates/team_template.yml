@@ -25,12 +25,12 @@ fields:
 - name: chinese_name
   label: chinese_name
   type: text
-  hidden: true
+  hidden: false
   default: ''
 - name: english_name
   label: english_name
   type: text
-  hidden: true
+  hidden: false
   default: ''
 - name: img
   label: Img

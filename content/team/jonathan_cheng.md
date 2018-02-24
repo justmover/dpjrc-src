@@ -1,6 +1,6 @@
 ---
 title: jonathan_cheng
-chinese_name: "鄭建性博士"
+chinese_name: "鄭建生博士"
 english_name: Dr Jonathan Cheng
 layout: team_detail
 img: "/img/team-04.jpg"

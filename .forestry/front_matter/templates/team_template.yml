@@ -16,8 +16,8 @@ fields:
   label: team
   fields:
   - type: text
-    name: TITLE
-    label: title
+    name: chinese_name
+    label: chinese_name
   - type: text
     name: english_name
     label: english_name

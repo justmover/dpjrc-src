@@ -18,16 +18,23 @@ fields:
   fields:
   - type: text
     name: chinese_name
-    label: chinese_name
+    label: "中文姓名"
+    description: "請輸入導師的中文姓名"
   - type: text
     name: english_name
-    label: english_name
+    label: "英文姓名"
+    description: "請輸入導師的英文姓名"
   - type: textarea
     name: description
-    label: description
+    label: "介紹"
+    description: "輸入文字介紹導師"
   - type: text
     name: link
-    label: link
+    label: "頁面連結"
+    description: "請輸入頁面連結"
+    hidden: true
   - type: file
     name: img_url
-    label: img_url
+    label: "導師圖片"
+    description: "這是用作導師的圖片"
+    hidden: true

@@ -23,15 +23,17 @@ fields:
   hidden: true
   default: ''
 - name: chinese_name
-  label: chinese_name
+  label: "導師的中文姓名"
   type: text
   hidden: false
   default: ''
+  description: "請輸入導師的中文姓名"
 - name: english_name
-  label: english_name
+  label: "導師的英文姓名"
   type: text
   hidden: false
   default: ''
+  description: "請輸入導師的英文姓名"
 - name: img
   label: Img
   type: file

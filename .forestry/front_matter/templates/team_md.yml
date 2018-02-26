@@ -1,0 +1,32 @@
+---
+hide_body: false
+fields:
+- type: text
+  label: title
+  name: title
+- type: datetime
+  name: date
+  label: date
+  hidden: true
+  config:
+    time_format: h:mm A
+  default: Invalid date
+- type: field_group_list
+  name: team
+  label: team
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: english_name
+    label: english_name
+  - type: textarea
+    name: description
+    label: description
+  - type: text
+    name: link
+    label: link
+  - type: file
+    name: img_url
+    label: img_url

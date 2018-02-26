@@ -17,99 +17,32 @@
             </div>
         </div>
         <div class="columns is-centered team-coloumns-margin">
-            <div class="column is-2 team-no-padding team-img-column">
-                <img src="/img/team-02.jpg">
-                <div class="team-hover-container">
-                    <div class="team-intro">
-                        周華山擁有心理劇治療、情緒治理、家庭治療、催眠治療等專業訓練證書；2006年創辦自在社，2014年與幾位身心靈前輩發起身心靈平台。
-                    </div>
-                    <a href="/team/chou_wah_shan">
-                        <div class="columns is-centered team-coloumns-margin team-more-container">
-                            <div class="column is-narrow team-more team-no-padding">
-                                更多
-                            </div>
+            {{range $element := .Params.team}}
+            <div class="column is-2 team-no-padding">
+                <div class="team-img-column">
+                    
+                    <img src="{{$element.img_url}}">
+                    <div class="team-hover-container">
+                        <div class="team-intro">
+                            {{$element.description}}
                         </div>
-                    </a>
+                        <a href="{{$element.link}}">
+                            <div class="team-coloumns-margin team-more-container">
+                                <div class="team-more team-no-padding" style="margin: 0 auto;">
+                                    更多
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="team-text-center team-name">
+                    {{$element.chinese_name}}
+                    <br> {{$element.english_name}}
                 </div>
             </div>
-            <div class="column is-2 team-no-padding team-img-column">
-                <img src="/img/team-03.jpg">
-                <div class="team-hover-container">
-                    <div class="team-intro">
-                        Red 大半生從事教育工作，1998年獲全獎學金，負笈英國牛津大學修讀博士學位，研究當代中國文學的英語翻譯現象，曾於理工大學、嶺南大學及英國的牛津大學、華威大學從事教學、研究工作。
-                    </div>
-                    <a href="/team/red_chan">
-                        <div class="columns is-centered team-coloumns-margin team-more-container">
-                            <div class="column is-narrow team-more team-no-padding">
-                                更多
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="column is-2 team-no-padding team-img-column">
-                <img src="/img/team-04.jpg">
-                <div class="team-hover-container">
-                    <div class="team-intro">
-                        鄭博士為註冊企業教練、註冊個人教練與及身心語言程式學（NLP）合格執行師，亦獲得生命領袖證書、生命教練證書、能量心理學情緒健康證書、痛症患者自我管理課程、精神健康急救「青少年」修業證書、人格障礙證書及完成Mindfulness-Based Stress
-                        Reduction Program等．
-                    </div>
-                    <a href="/team/jonathan_cheng">
-                        <div class="columns is-centered team-coloumns-margin team-more-container">
-                            <div class="column is-narrow team-more team-no-padding">
-                                更多
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-            <div class="column is-2 team-no-padding team-img-column">
-                <img src="/img/team-05.jpg">
-                <div class="team-hover-container">
-                    <div class="team-intro">
-                        Athena 是資深護士，具二十多年醫療行政經驗，並曾任護養院院長。十年前開始兼任家庭輔導義工，致力支持情緒困擾人士及其家人。Athena擅長轉化親密關係的糾結，及協助個案處理兩性關係。
-                    </div>
-                    <a href="/team/athena_au">
-                        <div class="columns is-centered team-coloumns-margin team-more-container">
-                            <div class="column is-narrow team-more team-no-padding">
-                                更多
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="columns is-centered team-text-center team-coloumns team-coloumns-margin">
-            <div class="column is-2 team-no-padding team-name">
-                周華山博士
-            </div>
-            <div class="column is-2 team-no-padding team-name">
-                陳美紅博士
-            </div>
-            <div class="column is-2 team-no-padding team-name">
-                鄭建生博士
-            </div>
-            <div class="column is-2 team-no-padding team-name">
-                區惠芳女士
-            </div>
-        </div>
-        <div class="columns is-centered team-text-center team-coloumns">
-            <div class="column is-2 team-no-padding team-name">
-                Dr Chou Wah Shan
-            </div>
-            <div class="column is-2 team-no-padding team-name">
-                Dr Red Chan
-            </div>
-            <div class="column is-2 team-no-padding team-name">
-                Dr Jonathan Cheng
-            </div>
-            <div class="column is-2 team-no-padding team-name">
-                Ms Athena Au
-            </div>
+            {{end}}
         </div>
     </div>
-
 
     <!-- mobile -->
     <div class="team-container is-hidden-tablet">
@@ -123,25 +56,26 @@
                 導師
             </div>
         </div>
-
-        <!-- 1 -->
-        <a href="/team/chou_wah_shan">
-            <div class="columns is-mobile is-centered team-text-center team-coloumns-margin">
-                <div class="column is-6 team-title-left">
-                    <div class="team-img-270px" style="background-image: url('/img/team-02.jpg')"></div>
+        <!-- get first index element -->
+        {{range first 1 .Params.team}}
+            <a href="{{.link}}">
+                <div class="columns is-mobile is-centered team-text-center team-coloumns-margin">
+                    <div class="column is-6 team-title-left">
+                        <div class="team-img-270px" style="background-image: url('{{.img_url}}')"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="columns is-centered team-text-center team-coloumns team-coloumns-margin">
-                <div class="column is-2 team-no-padding team-name">
-                    周華山博士
+                <div class="columns is-centered team-text-center team-coloumns team-coloumns-margin">
+                    <div class="column is-2 team-no-padding team-name">
+                        {{.chinese_name}}
+                    </div>
                 </div>
-            </div>
-            <div class="columns is-centered team-text-center team-coloumns">
-                <div class="column is-2 team-name">
-                    Dr Chou Wah Shan
+                <div class="columns is-centered team-text-center team-coloumns">
+                    <div class="column is-2 team-name">
+                        {{.english_name}}
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
+        {{end}}
 
         <!-- 總教練團隊 -->
 
@@ -151,65 +85,29 @@
             </div>
         </div>
 
-        <!-- 2 -->
-        <a href="/team/red_chan">
-            <div class="columns is-mobile is-centered team-text-center team-coloumns-margin">
-                <div class="column is-6 team-title-left">
-                    <div class="team-img-270px" style="background-image: url('/img/team-03.jpg')"></div>
-                </div>
-            </div>
-            <div class="columns is-centered team-text-center team-coloumns team-coloumns-margin">
-                <div class="column is-2 team-no-padding team-name">
-                    陳美紅博士
-                </div>
-            </div>
-            <div class="columns is-centered team-text-center team-coloumns">
-                <div class="column is-2 team-name">
-                    Dr Red Chan
-                </div>
-            </div>
-        </a>
-
-        <!-- 3 -->
-        <a href="/team/jonathan_cheng">
-            <div class="columns is-mobile is-centered team-text-center team-coloumns-margin">
-                <div class="column is-6 team-title-left">
-                    <div class="team-img-270px" style="background-image: url('/img/team-04.jpg')"></div>
-                </div>
-            </div>
-            <div class="columns is-centered team-text-center team-coloumns team-coloumns-margin">
-                <div class="column is-2 team-no-padding team-name">
-                    鄭建生博士
-                </div>
-            </div>
-            <div class="columns is-centered team-text-center team-coloumns">
-                <div class="column is-2 team-name">
-                    Dr Jonathan Cheng
-                </div>
-            </div>
-        </a>
-
-        <!-- 4 -->
-        <a href="/team/athena_au">
-            <div class="columns is-mobile is-centered team-text-center team-coloumns-margin">
-                <div class="column is-6 team-title-left">
-                    <div class="team-img-270px" style="background-image: url('/img/team-05.jpg')"></div>
-                </div>
-            </div>
-            <div class="columns is-centered team-text-center team-coloumns team-coloumns-margin">
-                <div class="column is-2 team-no-padding team-name">
-                    區惠芳女士
-                </div>
-            </div>
-            <div class="columns is-centered team-text-center team-coloumns">
-                <div class="column is-2 team-name">
-                    Ms Athena Au
-                </div>
-            </div>
-        </a>
-
-
-
+        {{range $index,$element := .Params.team}}
+            <!-- get array index != 0 element -->
+            {{ if ne $index 0}}
+                <a href="{{$element.link}}">
+                    <div class="columns is-mobile is-centered team-text-center team-coloumns-margin">
+                        <div class="column is-6 team-title-left">
+                            <div class="team-img-270px" style="background-image: url('{{$element.img_url}}')"></div>
+                        </div>
+                    </div>
+                    <div class="columns is-centered team-text-center team-coloumns team-coloumns-margin">
+                        <div class="column is-2 team-no-padding team-name">
+                            {{$element.chinese_name}}
+                        </div>
+                    </div>
+                    <div class="columns is-centered team-text-center team-coloumns">
+                        <div class="column is-2 team-name">
+                            {{$element.english_name}}
+                        </div>
+                    </div>
+                </a>
+            {{end}}
+        {{ end }}
+       
     </div>
 </div>
 {{ end }}

@@ -1,4 +1,6 @@
 ---
+pages:
+- team/team.md
 hide_body: true
 fields:
 - type: text

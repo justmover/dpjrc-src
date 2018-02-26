@@ -8,6 +8,7 @@ team:
   description: "周華山擁有心理劇治療、情緒治理、家庭治療、催眠治療等專業訓練證書；2006年創辦自在社，2014年與幾位身心靈前輩發起身心靈平台。"
   link: "/team/chou_wah_shan"
   img_url: "/img/team-02.jpg"
+  title: ''
 - chinese_name: "陳美紅博士"
   english_name: Dr Red Chan
   description: Red 大半生從事教育工作，1998年獲全獎學金，負笈英國牛津大學修讀博士學位，研究當代中國文學的英語翻譯現象，曾於理工大學、嶺南大學及英國的牛津大學、華威大學從事教學、研究工作。
@@ -24,5 +25,6 @@ team:
   description: Athena 是資深護士，具二十多年醫療行政經驗，並曾任護養院院長。十年前開始兼任家庭輔導義工，致力支持情緒困擾人士及其家人。Athena擅長轉化親密關係的糾結，及協助個案處理兩性關係。
   link: "/team/athena_au"
   img_url: "/img/team-05.jpg"
+type: team_md
 
 ---

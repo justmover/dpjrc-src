@@ -2,8 +2,9 @@
 hide_body: false
 fields:
 - type: text
-  label: title
+  label: "網頁標題"
   name: title
+  description: "顯示於瀏覽器上的標題"
 - type: datetime
   name: date
   label: date

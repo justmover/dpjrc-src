@@ -16,7 +16,7 @@ fields:
   label: team
   fields:
   - type: text
-    name: title
+    name: TITLE
     label: title
   - type: text
     name: english_name

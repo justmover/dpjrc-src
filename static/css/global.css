@@ -333,6 +333,7 @@ main.content {
     color: white;
     border: white solid 1px;
     font-size: 14pt;
+    width: 60%;
 }
 
 .team-hover-container {

@@ -1,8 +1,6 @@
 ---
-pages:
-- story/story150.md
-- story/苦難中堅持愛.md
 hide_body: false
+is_partial: false
 fields:
 - type: text
   name: title
@@ -26,3 +24,7 @@ fields:
   hidden: true
   config:
     time_format: h:mm A
+pages:
+- story/--------.md
+- story/story150.md
+- story/苦難中堅持愛.md

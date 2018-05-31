@@ -1,10 +1,6 @@
 ---
-pages:
-- team/jonathan_cheng.md
-- team/red_chan.md
-- team/chou_wah_shan.md
-- team/athena_au.md
 hide_body: false
+is_partial: false
 fields:
 - name: title
   label: "網頁標題"
@@ -39,3 +35,8 @@ fields:
   type: file
   hidden: true
   default: ''
+pages:
+- team/jonathan_cheng.md
+- team/red_chan.md
+- team/chou_wah_shan.md
+- team/athena_au.md

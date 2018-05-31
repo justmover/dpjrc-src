@@ -1,7 +1,6 @@
 ---
-pages:
-- course/course-intro.md
 hide_body: false
+is_partial: false
 fields:
 - name: title
   label: title
@@ -25,3 +24,5 @@ fields:
   type: text
   hidden: true
   default: ''
+pages:
+- course/course-intro.md

@@ -1,7 +1,6 @@
 ---
-pages:
-- faq/faq.md
 hide_body: false
+is_partial: false
 fields:
 - name: title
   label: "網頁標題"
@@ -38,3 +37,5 @@ fields:
     default: ''
   hidden: false
   default: ''
+pages:
+- faq/faq.md

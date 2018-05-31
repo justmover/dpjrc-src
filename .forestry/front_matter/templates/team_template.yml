@@ -1,7 +1,6 @@
 ---
-pages:
-- team/team.md
 hide_body: true
+is_partial: false
 fields:
 - type: text
   label: "網頁標題"
@@ -40,3 +39,5 @@ fields:
     label: "導師圖片"
     description: "這是用作導師的圖片"
     hidden: true
+pages:
+- team/team.md

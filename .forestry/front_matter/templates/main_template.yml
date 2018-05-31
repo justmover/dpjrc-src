@@ -1,7 +1,6 @@
 ---
-pages:
-- home/home.md
 hide_body: false
+is_partial: false
 fields:
 - name: title
   label: "網頁標題"
@@ -44,3 +43,5 @@ fields:
   hidden: false
   default: ''
   description: "請描述課程的內容"
+pages:
+- home/home.md

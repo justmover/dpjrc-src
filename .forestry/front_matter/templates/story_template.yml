@@ -25,6 +25,7 @@ fields:
   config:
     time_format: h:mm A
 pages:
+- story/------------.md
 - story/---------.md
 - story/------.md
 - story/--------.md

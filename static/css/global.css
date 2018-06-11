@@ -7,6 +7,9 @@
 .font-27{
     font-size: 27pt;
 }
+.font-16 {
+    font-size: 16px;
+}
 .font-11 {
     font-size: 11pt;
 }
@@ -599,19 +602,50 @@ main.content {
 }
 .story-detail-container{
     width: 100%;
-    max-height: 500px;
-    background-color: #05272b;
-    overflow-y: auto;
     display: none;
+    
 }
 .story-container-show{
     display: block !important;
 }
 
-.story-photo{
-    width:290px;
-    height:210px;
+.story-media{
+    max-width: 100%;
+    max-height:350px;
+}
 
+.story-thumbnailPhoto-container {
+    max-height: 146px;
+    max-width: 146px;
+
+}
+.story-thumbnailPhoto-container .media {
+    object-fit: cover;
+    height: 146px;
+    width: 146px;
+}
+
+@media screen and (max-width: 768px) {
+.story-thumbnailPhoto-container {
+    max-height: 130px;
+    max-width: 130px;
+}
+.story-thumbnailPhoto-container .media {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+}
+.story-arrow-left {
+    cursor: pointer;
+}
+.story-arrow-right {
+    cursor: pointer;
+}
+
+.story-carousel {
+    width: 100%;
+    background-color: #000;
 }
 
 .cannotClick{

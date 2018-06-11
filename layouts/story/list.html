@@ -1,55 +1,60 @@
-{{ define "main" }} {{ range $index, $content :=.Pages }}
-<div id="{{.Title}}_content" class="story-detail-container {{if eq $index 0}} story-container-show {{end}}">
-    <div style="color:white;width:100%;padding:30px calc(50% - 280px) 0px">
-        {{if .Params.videolink}}
-        <div class="videoWrapper">
-            <iframe width="100%" height="265" src="{{ .Params.videolink}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-        {{else}}
-        <div >
-            <img width="100%" height="265" src="{{ .Params.thumbnailpicture}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-        {{end}}
-        <div class="text-center white font-21">{{.Title}}</div>
+{{ define "main" }}
+
+<div class="story-carousel columns columns-no-margin is-centered is-mobile">
+    <div class="column is-1" style="padding: 65px 0;">
+        <span class="story-arrow-left white font-27"><</span>
     </div>
-    <div style="color:white;width:100%;padding:30px calc(50% - 350px)">
-
-        <div class="font-11">
-            {{.Content}}
+    {{range $index, $content := .Pages}}
+    <div class="column is-5-mobile is-2-tablet story-carousel-items" id="story-carousel-item-{{$index}}">
+        <div id="{{$content.Title}}" class="story-video">
+            {{if $content.Params.videolink}}
+    
+            <div class="story-thumbnailPhoto-container text-center">
+                <iframe class="cannotClick media" src="{{ $content.Params.videolink}}" frameborder="0" disabled="true"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            {{else}}
+            <div class="text-center story-thumbnailPhoto-container" style="margin: 0 auto;">
+                <img class="media" src="{{ $content.Params.thumbnailpicture}}"/>
+            </div>
+            {{end}}
+            <div class="white text-center">{{$content.Title}}</div>
         </div>
-
+    </div>
+    {{ end }}
+    <div class="column is-1 text-right" style="padding: 65px 0;">
+        <span class="story-arrow-right white font-27">></span>
     </div>
 </div>
-{{end}}
+
 <div class="columns columns-no-margin">
     <div class="column story-title-bar white font-27">
         生命故事
     </div>
 </div>
 
-<div class="columns is-multiline columns-no-margin">
 
-    {{range $index, $content := .Pages}}
-    <div id="{{$content.Title}}" class="story-video column is-4">
-        {{if $content.Params.videolink}}
-
+{{ range $index, $content :=.Pages }}
+<div id="{{.Title}}_content" class="story-detail-container {{if eq $index 0}} story-container-show {{end}}">
+    <div style="width:100%;" class="white text-center">
+        {{if .Params.videolink}}
         <div class="videoWrapper">
-            <iframe class="cannotClick" width="290" height="210" src="{{ $content.Params.videolink}}" frameborder="0" disabled="true"
-                allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+            <iframe class="story-media" src="{{ .Params.videolink}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
         {{else}}
         <div>
-            <img width="320" height="210" src="{{ $content.Params.thumbnailpicture}}">
+            <img class="story-media" src="{{ .Params.thumbnailpicture}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
         </div>
         {{end}}
-        <div class="story-video-title white text-center">{{$content.Title}}</div>
-        <div class="story-video-intro">{{$content.Content}}</div>
+        <div class="text-center font-21">{{.Title}}</div>
     </div>
-    {{ end }}
+    <div style="width:100%;padding: 0 8% 8% 8%;">
+        <div class="font-16">
+            {{.Content}}
+        </div>
+    </div>
 </div>
-
-
+{{end}}
 
 <script>
     $(document).ready(function () {
@@ -61,9 +66,61 @@
                 $('#' + e.currentTarget.id + '_content').addClass('story-container-show');  // show clicked story
             }
             currentContentTitle = e.currentTarget.id;
-        })
+            $('html,body').animate({
+                scrollTop: $(".story-title-bar").offset().top},
+            'slow');
+        });
+
+        var arrangeNumber, currentIndex;
+        var existingStoriesArray = $('.story-carousel-items');
+    
+        function initArrangeNumber() {
+            arrangeNumber = ($(window).width() > 768) ? 5 : 2;
+        }
+        initArrangeNumber();
+
+    var hiddenCount = (existingStoriesArray.length > arrangeNumber) ? (existingStoriesArray.length - arrangeNumber) : 0;
+    // For first time to hide the element
+    function hideStoryElement() {
+        for(var i = 0 ; i < hiddenCount; i++) {
+            if(existingStoriesArray.length > arrangeNumber) {
+                $("#story-carousel-item-" + (i+arrangeNumber)).hide();
+            }
+        }
+    }
+    // when user resize the browser will call this function
+    $(window).on('resize', function(event){
+        initArrangeNumber();
+        showStoryElement();
     });
 
-</script>
+    hideStoryElement();
+    currentIndex = arrangeNumber - 1;
 
-{{ end }}
+    function showStoryElement() {
+        $(".story-carousel-items").hide();
+        if(currentIndex < 4) {
+            currentIndex = arrangeNumber - 1;
+        }
+        for(var i = 0; i < arrangeNumber; i++) {
+            $("#story-carousel-item-" + ((currentIndex + 1)-arrangeNumber+i)).show(); 
+        }  
+    }
+
+        $('.story-arrow-left').on('click', function (e) {
+            if(currentIndex > (arrangeNumber - 1)) {
+                $("#story-carousel-item-" + currentIndex).hide();
+                $("#story-carousel-item-" + (currentIndex - arrangeNumber)).show();
+                currentIndex --;
+            }
+        });
+        $('.story-arrow-right').on('click', function (e) {
+            if(currentIndex < existingStoriesArray.length - 1) {
+                currentIndex ++;
+                $("#story-carousel-item-" + currentIndex).show();
+                $("#story-carousel-item-" + (currentIndex - arrangeNumber)).hide();
+            }
+        });
+    });
+
+</script> {{ end }}

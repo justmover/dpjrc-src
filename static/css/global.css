@@ -609,20 +609,19 @@ main.content {
     display: block !important;
 }
 
-.story-media{
+.story-media {
     max-width: 100%;
-    max-height:350px;
+    max-height: 350px;
 }
 
 .story-thumbnailPhoto-container {
     max-height: 146px;
     max-width: 146px;
-
 }
 .story-thumbnailPhoto-container .media {
     object-fit: cover;
-    height: 146px;
-    width: 146px;
+    height: 100%;
+    width: 100%;
 }
 
 @media screen and (max-width: 768px) {

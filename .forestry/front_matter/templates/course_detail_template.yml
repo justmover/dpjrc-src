@@ -1,4 +1,5 @@
 ---
+label: course_detail_template
 hide_body: false
 is_partial: false
 fields:
@@ -21,39 +22,39 @@ fields:
   hidden: true
   default: ''
 - name: coursedate
-  label: "開課日期"
+  label: 開課日期
   type: text
   hidden: false
   default: ''
-  description: "請輸入課程的開始日期"
+  description: 請輸入課程的開始日期
 - name: limit
-  label: "修業期"
+  label: 修業期
   type: text
   hidden: false
   default: ''
-  description: "請輸入課程的修業期"
+  description: 請輸入課程的修業期
 - name: language
-  label: "教學語言"
+  label: 教學語言
   type: text
   hidden: false
   default: ''
-  description: "請輸入課程的教學語言(例如:粵語)"
+  description: 請輸入課程的教學語言(例如:粵語)
 - name: location
-  label: "上課地點"
+  label: 上課地點
   type: text
   hidden: false
   default: ''
-  description: "請輸入課程的上課地點(例如:自在社（灣仔）)"
+  description: 請輸入課程的上課地點(例如:自在社（灣仔）)
 - name: joinlink
-  label: "網上報名連結"
+  label: 網上報名連結
   type: text
   hidden: false
   default: ''
-  description: "請輸入google form連結(https://docs.google.com/forms/xxxxxxxx)"
+  description: 請輸入google form連結(https://docs.google.com/forms/xxxxxxxx)
 - name: display
   label: Display
   type: text
   hidden: true
   default: ''
 pages:
-- course/course-detail.md
+- content/course/course-detail.md

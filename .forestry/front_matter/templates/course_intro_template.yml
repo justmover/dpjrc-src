@@ -1,4 +1,5 @@
 ---
+label: course_intro_template
 hide_body: false
 is_partial: false
 fields:
@@ -25,4 +26,4 @@ fields:
   hidden: true
   default: ''
 pages:
-- course/course-intro.md
+- content/course/course-intro.md

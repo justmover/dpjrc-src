@@ -1,23 +1,24 @@
 ---
+label: story_template
 hide_body: false
 is_partial: false
 fields:
 - type: text
   name: title
-  label: "故事標題"
-  description: "請輸入生命故事的標題"
+  label: 故事標題
+  description: 請輸入生命故事的標題
 - type: text
-  label: "顯示次序"
+  label: 顯示次序
   name: weight
-  description: "輸入由1開始的數字，代表這個故事在眾多故事中的顯示順序"
+  description: 輸入由1開始的數字，代表這個故事在眾多故事中的顯示順序
 - type: file
   name: thumbnailpicture
-  label: "標題相片"
-  description: "這張相片會用作生命故事的封面"
+  label: 標題相片
+  description: 這張相片會用作生命故事的封面
 - type: text
-  label: "故事影片"
+  label: 故事影片
   name: videolink
-  description: "請輸入YouTube影片網址"
+  description: 請輸入YouTube影片網址
 - type: datetime
   name: date
   label: Date
@@ -25,12 +26,12 @@ fields:
   config:
     time_format: h:mm A
 pages:
-- story/-------.md
-- story/----------1.md
-- story/---.md
-- story/-------------------------.md
-- story/------------.md
-- story/---------.md
-- story/------.md
-- story/--------.md
-- story/苦難中堅持愛.md
+- content/story/-------.md
+- content/story/苦難中堅持愛.md
+- content/story/----------1.md
+- content/story/---------.md
+- content/story/--------.md
+- content/story/------------.md
+- content/story/------.md
+- content/story/---.md
+- content/story/-------------------------.md

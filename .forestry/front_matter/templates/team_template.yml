@@ -1,11 +1,12 @@
 ---
+label: team_template
 hide_body: true
 is_partial: false
 fields:
 - type: text
-  label: "網頁標題"
+  label: 網頁標題
   name: title
-  description: "顯示於瀏覽器上的標題"
+  description: 顯示於瀏覽器上的標題
 - type: datetime
   name: date
   label: date
@@ -19,25 +20,25 @@ fields:
   fields:
   - type: text
     name: chinese_name
-    label: "中文姓名"
-    description: "請輸入導師的中文姓名"
+    label: 中文姓名
+    description: 請輸入導師的中文姓名
   - type: text
     name: english_name
-    label: "英文姓名"
-    description: "請輸入導師的英文姓名"
+    label: 英文姓名
+    description: 請輸入導師的英文姓名
   - type: textarea
     name: description
-    label: "介紹"
-    description: "輸入文字介紹導師"
+    label: 介紹
+    description: 輸入文字介紹導師
   - type: text
     name: link
-    label: "頁面連結"
-    description: "請輸入頁面連結"
+    label: 頁面連結
+    description: 請輸入頁面連結
     hidden: true
   - type: file
     name: img_url
-    label: "導師圖片"
-    description: "這是用作導師的圖片"
+    label: 導師圖片
+    description: 這是用作導師的圖片
     hidden: true
 pages:
-- team/team.md
+- content/team/team.md

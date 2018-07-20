@@ -1,13 +1,14 @@
 ---
+label: team_detail_template
 hide_body: false
 is_partial: false
 fields:
 - name: title
-  label: "網頁標題"
+  label: 網頁標題
   type: text
   hidden: false
   default: ''
-  description: "顯示於瀏覽器上的標題"
+  description: 顯示於瀏覽器上的標題
 - name: type
   label: Type
   type: text
@@ -19,24 +20,24 @@ fields:
   hidden: true
   default: ''
 - name: chinese_name
-  label: "導師的中文姓名"
+  label: 導師的中文姓名
   type: text
   hidden: false
   default: ''
-  description: "請輸入導師的中文姓名"
+  description: 請輸入導師的中文姓名
 - name: english_name
-  label: "導師的英文姓名"
+  label: 導師的英文姓名
   type: text
   hidden: false
   default: ''
-  description: "請輸入導師的英文姓名"
+  description: 請輸入導師的英文姓名
 - name: img
   label: Img
   type: file
   hidden: true
   default: ''
 pages:
-- team/jonathan_cheng.md
-- team/red_chan.md
-- team/chou_wah_shan.md
-- team/athena_au.md
+- content/team/jonathan_cheng.md
+- content/team/red_chan.md
+- content/team/athena_au.md
+- content/team/chou_wah_shan.md

@@ -1,5 +1,39 @@
 {{ define "main" }}
 
+<!-- The list of course -->
+<div class="section timeline is-centered">
+    {{range $batch := .Params.course }}
+    <header class="timeline-header">
+        <span class="tag is-medium is-primary">{{$batch.name}}</span>
+    </header>
+    <div class="timeline-item is-primary">
+        <div class="timeline-marker is-icon">
+            <i class="fa fa-flag"></i>
+        </div>
+        <div class="timeline-content">
+            <p class="heading">{{$batch.period}}</p>
+            <div class="columns is-multiline">
+                {{range $index, $content := where $.Pages "Params.batch" $batch.name}}
+                <div class="column is-4">
+                    <button type="button" class="btn btn-light">
+                        <figure class="image is-64x64">
+                            <img class="is-rounded" src="{{ $content.Params.thumbnailpicture}}">
+                        </figure>
+                        <p class="has-text-justified" style="white-space: normal;"> {{$content.Title}} </p>
+                    </button>
+                </div>
+                {{end}}
+            </div>
+        </div>
+    </div>
+    {{end}}
+    <header class="timeline-header">
+        <span class="tag is-medium is-primary">課程開展</span>
+    </header>
+</div>
+
+<!-- Code below keep for reference -->
+<!-- 
 <div class="story-carousel columns columns-no-margin is-centered is-mobile">
     <div class="column is-1" style="padding: 65px 0;">
         <span class="story-arrow-left white font-27"><</span>
@@ -8,14 +42,14 @@
     <div class="column is-5-mobile is-2-tablet story-carousel-items" id="story-carousel-item-{{$index}}">
         <div id="{{$content.Title}}" class="story-video">
             {{if $content.Params.videolink}}
-    
+
             <div class="story-thumbnailPhoto-container text-center">
-                <iframe class="cannotClick media" src="{{ $content.Params.videolink}}" frameborder="0" disabled="true"
-                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <iframe class="cannotClick media" src="{{ $content.Params.videolink}}" frameborder="0" disabled="true" allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>
             </div>
             {{else}}
             <div class="text-center story-thumbnailPhoto-container" style="margin: 0 auto;">
-                <img class="media" src="{{ $content.Params.thumbnailpicture}}"/>
+                <img class="media" src="{{ $content.Params.thumbnailpicture}}" />
             </div>
             {{end}}
             <div class="white text-center">{{$content.Title}}</div>
@@ -66,60 +100,63 @@
             }
             currentContentTitle = e.currentTarget.id;
             $('html,body').animate({
-                scrollTop: $(".story-title-bar").offset().top},
-            'slow');
+                scrollTop: $(".story-title-bar").offset().top
+            },
+                'slow');
         });
 
         var arrangeNumber, currentIndex;
         var existingStoriesArray = $('.story-carousel-items');
-    
+
         function initArrangeNumber() {
             arrangeNumber = ($(window).width() > 768) ? 5 : 2;
         }
         initArrangeNumber();
 
-    var hiddenCount = (existingStoriesArray.length > arrangeNumber) ? (existingStoriesArray.length - arrangeNumber) : 0;
-    // For first time to hide the element
-    function hideStoryElement() {
-        for(var i = 0 ; i < hiddenCount; i++) {
-            if(existingStoriesArray.length > arrangeNumber) {
-                $("#story-carousel-item-" + (i+arrangeNumber)).hide();
+        var hiddenCount = (existingStoriesArray.length > arrangeNumber) ? (existingStoriesArray.length - arrangeNumber) : 0;
+        // For first time to hide the element
+        function hideStoryElement() {
+            for (var i = 0; i < hiddenCount; i++) {
+                if (existingStoriesArray.length > arrangeNumber) {
+                    $("#story-carousel-item-" + (i + arrangeNumber)).hide();
+                }
             }
         }
-    }
-    // when user resize the browser will call this function
-    $(window).on('resize', function(event){
-        initArrangeNumber();
-        showStoryElement();
-    });
+        // when user resize the browser will call this function
+        $(window).on('resize', function (event) {
+            initArrangeNumber();
+            showStoryElement();
+        });
 
-    hideStoryElement();
-    currentIndex = arrangeNumber - 1;
+        hideStoryElement();
+        currentIndex = arrangeNumber - 1;
 
-    function showStoryElement() {
-        $(".story-carousel-items").hide();
-        if(currentIndex < 4) {
-            currentIndex = arrangeNumber - 1;
+        function showStoryElement() {
+            $(".story-carousel-items").hide();
+            if (currentIndex < 4) {
+                currentIndex = arrangeNumber - 1;
+            }
+            for (var i = 0; i < arrangeNumber; i++) {
+                $("#story-carousel-item-" + ((currentIndex + 1) - arrangeNumber + i)).show();
+            }
         }
-        for(var i = 0; i < arrangeNumber; i++) {
-            $("#story-carousel-item-" + ((currentIndex + 1)-arrangeNumber+i)).show(); 
-        }  
-    }
 
         $('.story-arrow-left').on('click', function (e) {
-            if(currentIndex > (arrangeNumber - 1)) {
+            if (currentIndex > (arrangeNumber - 1)) {
                 $("#story-carousel-item-" + currentIndex).hide();
                 $("#story-carousel-item-" + (currentIndex - arrangeNumber)).show();
-                currentIndex --;
+                currentIndex--;
             }
         });
         $('.story-arrow-right').on('click', function (e) {
-            if(currentIndex < existingStoriesArray.length - 1) {
-                currentIndex ++;
+            if (currentIndex < existingStoriesArray.length - 1) {
+                currentIndex++;
                 $("#story-carousel-item-" + currentIndex).show();
                 $("#story-carousel-item-" + (currentIndex - arrangeNumber)).hide();
             }
         });
     });
 
-</script> {{ end }}
+</script>-->
+
+{{ end }}

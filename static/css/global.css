@@ -691,6 +691,19 @@ main.content {
     background-color: #000;
 }
 
+.story-breadcrumbs {
+    color: #9a9494;
+}
+
+.story-breadcrumbs>a,
+.story-breadcrumbs>a:link,
+.story-breadcrumbs>a:visited,
+.story-breadcrumbs>a:hover,
+.story-breadcrumbs>a:active {
+    color: #9a9494;
+    text-decoration: none;
+}
+
 .cannotClick {
     pointer-events: none;
 }

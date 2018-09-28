@@ -1,5 +1,45 @@
 {{ define "main" }}
+<div class="content">
+    <!-- #region header banner -->
+    <img class="pages-banner is-hidden-mobile" src="/img/story_banner.png">
+    <img class="pages-banner is-hidden-tablet" src="/img/story_banner_mobile.png">
+    <!-- #endregion -->
+    <!-- #region bread crumb -->
+    <p class="story-breadcrumbs m-4">
+        <a href="/story">首頁</a> > <a href="/story">{{.Params.batch}}</a>
+        > {{.Title}}
+    </p>
 
-{{.Content}}
 
+    <!-- </nav> -->
+    <!-- #endregion -->
+
+    <!-- #region profile pic -->
+    <figure>
+        {{if .Params.videolink}}
+        <div class="videoWrapper">
+            <iframe class="story-media" src="{{ .Params.videolink}}" frameborder="0" allow="autoplay; encrypted-media"
+                allowfullscreen></iframe>
+        </div>
+        {{else}}
+        <img class="story-media" src="{{ .Params.thumbnailpicture}}" frameborder="0" allow="autoplay; encrypted-media"
+            allowfullscreen>
+        {{end}}
+    </figure>
+    <!-- #endregion -->
+
+    <!-- #region Story Title -->
+    <div class="columns columns-no-margin">
+        <div class="column story-title-bar white font-27">
+            {{.Title}}
+        </div>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region Content -->
+    <div class="font-16 mx-3 mb-4">
+        {{.Content}}
+    </div>
+    <!-- #endregion -->
+</div>
 {{end}}

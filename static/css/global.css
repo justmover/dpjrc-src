@@ -65,6 +65,10 @@
     text-decoration: none !important;
 }
 
+.is-crop-proportion {
+    object-fit: cover;
+}
+
 
 /* main view width */
 

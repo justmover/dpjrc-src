@@ -1,9 +1,9 @@
 {{ define "main" }}
 
 <!-- The list of course -->
-<div class="section timeline is-centered">
+<div class="section timeline ">
     {{range $batch := .Params.course }}
-    <header class="timeline-header">
+    <header class="timeline-header" style="justify-content: start;">
         <span class="tag is-medium is-primary">{{$batch.name}}</span>
     </header>
     <div class="timeline-item is-primary">
@@ -16,10 +16,10 @@
                 {{range $index, $content := where $.Pages "Params.batch" $batch.name}}
                 <div class="column is-4">
                     <button type="button" class="btn btn-light">
-                        <figure class="image is-64x64">
-                            <img class="is-rounded" src="{{ $content.Params.thumbnailpicture}}">
+                        <figure class="image is-128x128">
+                            <img class="image is-128x128 is-rounded is-crop-proportion" src="{{ $content.Params.thumbnailpicture}}">
                         </figure>
-                        <p class="has-text-justified" style="white-space: normal;"> {{$content.Title}} </p>
+                        <p class="has-text-centered" style="white-space: normal;"> {{$content.Title}} </p>
                     </button>
                 </div>
                 {{end}}
@@ -28,7 +28,7 @@
     </div>
     {{end}}
     <header class="timeline-header">
-        <span class="tag is-medium is-primary">課程開展</span>
+        <span class="tag is-medium is-primary">生命故事</span>
     </header>
 </div>
 

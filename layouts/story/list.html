@@ -15,12 +15,14 @@
             <div class="columns is-multiline">
                 {{range $index, $content := where $.Pages "Params.batch" $batch.name}}
                 <div class="column is-4">
-                    <button type="button" class="btn btn-light">
-                        <figure class="image is-128x128">
-                            <img class="image is-128x128 is-rounded is-crop-proportion" src="{{ $content.Params.thumbnailpicture}}">
-                        </figure>
-                        <p class="has-text-centered" style="white-space: normal;"> {{$content.Title}} </p>
-                    </button>
+                    <form action="{{.Permalink}}">
+                        <button type="submit" class="btn btn-light">
+                            <figure class="image is-128x128">
+                                <img class="image is-128x128 is-rounded is-crop-proportion" src="{{ $content.Params.thumbnailpicture}}">
+                            </figure>
+                            <p class="has-text-centered" style="white-space: normal;"> {{$content.Title}} </p>
+                        </button>
+                    </form>
                 </div>
                 {{end}}
             </div>

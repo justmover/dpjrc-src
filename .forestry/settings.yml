@@ -4,30 +4,46 @@ auto_deploy: true
 admin_path: 
 webhook_url: 
 sections:
-- path: content/contact
+- type: directory
+  path: content/contact
   label: Contact
   create: all
-- path: content/home
+  match: "**/*"
+- type: directory
+  path: content/home
   label: Home
   create: all
-- path: content/intro
+  match: "**/*"
+- type: directory
+  path: content/intro
   label: Intro
   create: all
-- path: content/course
+  match: "**/*"
+- type: directory
+  path: content/course
   label: Course
   create: all
-- path: content/faq
+  match: "**/*"
+- type: directory
+  path: content/faq
   label: Faq
   create: all
-- path: content/story
+  match: "**/*"
+- type: directory
+  path: content/story
   label: Story
   create: all
-- path: content/team
+  match: "**/*"
+- type: directory
+  path: content/team
   label: Team
   create: all
-- path: content/thanks
+  match: "**/*"
+- type: directory
+  path: content/thanks
   label: Thanks
   create: all
+  match: "**/*"
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: "/uploads"

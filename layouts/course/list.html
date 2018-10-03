@@ -16,7 +16,7 @@
                 </p>
             </div>
             <div class="text-center margin-top-45">
-                <a href="{{ .Params.joinlink}}" target="_blank"><img src="/img/join_btn.png"/></a>
+                <a href="{{ .Params.joinlink}}" target="_blank"><img src="/img/join_btn.png" /></a>
             </div>
         </div>
         <div class="column is-5 table">
@@ -48,6 +48,12 @@
     </div>
     <div>
         &nbsp;
+    </div>
+    {{end}}
+    <!-- Past Course -->
+    {{ range where .Data.Pages ".Params.display" "history" }}
+    <div class="container">
+        {{ .Content }}
     </div>
     {{end}}
 

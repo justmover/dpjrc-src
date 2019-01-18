@@ -22,8 +22,8 @@ fields:
   hidden: true
   default: ''
 pages:
-- content/thanks/thanks.md
-- content/intro/intro.md
-- content/course/_index.md
-- content/contact/contact.md
 - content/story/_index.md
+- content/contact/contact.md
+- content/intro/intro.md
+- content/thanks/thanks.md
+- content/course/_index.md

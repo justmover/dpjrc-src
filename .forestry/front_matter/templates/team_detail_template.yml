@@ -38,6 +38,6 @@ fields:
   default: ''
 pages:
 - content/team/jonathan_cheng.md
-- content/team/athena_au.md
 - content/team/red_chan.md
+- content/team/athena_au.md
 - content/team/chou_wah_shan.md

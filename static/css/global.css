@@ -597,6 +597,7 @@ main.content {
     color: white;
     text-align: center;
     font-size: 14pt;
+    font-weight: 600;
 }
 .course-container .past-course-container .detail-subtitle {
     color: #006838;

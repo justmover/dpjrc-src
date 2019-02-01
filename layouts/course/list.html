@@ -6,6 +6,14 @@
     </div>
     <!-- FAB -->
     {{ partial "fab" . }}
+    <!-- Past Course for desktop display -->
+    {{ range where .Data.Pages ".Params.display" "history" }}
+    <div class="past-course-container is-hidden-mobile">
+        <div class="detail-container">
+            {{ .Content }}
+        </div>
+    </div>
+    {{end}}
     <!-- course detail -->
     {{ range where .Data.Pages ".Params.display" "course-detail" }}
     <div class="columns course-detail text-center">
@@ -50,10 +58,12 @@
         &nbsp;
     </div>
     {{end}}
-    <!-- Past Course -->
+    <!-- Past Course for mobile display -->
     {{ range where .Data.Pages ".Params.display" "history" }}
-    <div class="container">
+    <div class="past-course-container is-hidden-tablet">
+        <div class="detail-container">
         {{ .Content }}
+        </div>
     </div>
     {{end}}
 

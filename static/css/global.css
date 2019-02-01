@@ -582,6 +582,62 @@ main.content {
     width: 6px;
 }
 
+.course-container .past-course-container {
+    position: relative;
+    margin-left: 15px;
+}
+
+.course-container .past-course-container .detail-container {
+    position: absolute;
+    width: 180px;
+    border: 1px solid black;
+}
+.course-container .past-course-container .detail-title {
+    background: #00a750;
+    color: white;
+    text-align: center;
+    font-size: 14pt;
+}
+.course-container .past-course-container .detail-subtitle {
+    color: #006838;
+    font-weight: bold;
+    font-size: 12pt;
+    margin: 10px 0 0 10px;
+}
+.course-container .past-course-container .detail-date {
+    font-size: 12pt;
+    margin: 0 0 10px 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .course-container .past-course-container {
+        position: relative;
+        margin: 0;
+    }
+    
+    .course-container .past-course-container .detail-container {
+        position: relative !important;
+        width: 100%;
+        border: none;
+    }
+    .course-container .past-course-container .detail-title {
+        background-color: #009da5;
+        font-size: 1.5em;
+        color: white;
+        text-align: left;
+    }
+    .course-container .past-course-container .detail-subtitle {
+        color: #006838;
+        font-weight: bold;
+        font-size: 12pt;
+    }
+    .course-container .past-course-container .detail-date {
+        font-size: 12pt;
+    }    
+}
+
+
 
 .videoWrapper {
     position: relative;

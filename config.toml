@@ -41,3 +41,6 @@ identifier = "intro"
 name = "緣起"
 url = "/intro/intro"
 weight = 1
+[params]
+fblink = "https://www.facebook.com/pg/dp3333/"
+youtubelink = "https://www.youtube.com/watch?v=tbfo4mLdc3Y&list=PLbog5WuQqJajS1IkSxEG1JFFneA3nP1Mo"

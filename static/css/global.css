@@ -588,7 +588,7 @@ main.content {
 
 .course-container .past-course-container .detail-container {
     position: absolute;
-    width: 180px;
+    width: 150px;
     border: 1px solid black;
     margin-left: 15px;
 }

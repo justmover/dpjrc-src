@@ -9,6 +9,9 @@
     {{range $batch := .Params.course }}
     <header class="timeline-header" style="justify-content: start;">
         <span class="tag is-medium is-primary">{{$batch.name}}</span>
+        {{ range $index, $content := where $.Pages "Params.title" $batch.name }}
+            <a href="{{.Permalink}}" class="tag is-medium">簡介與總結</a>
+        {{ end }}
     </header>
     <div class="timeline-item is-primary">
         <div class="timeline-marker is-icon">

@@ -57,7 +57,8 @@
             </div>
         </div>
         <!-- get first index element -->
-        {{range first 1 .Params.team}}
+        {{ with .Params.team }}
+        {{ range first 1 .}}
             <a href="{{.link}}">
                 <div class="columns is-mobile is-centered team-text-center team-coloumns-margin">
                     <div class="column is-6 team-title-left">
@@ -76,6 +77,8 @@
                 </div>
             </a>
         {{end}}
+        {{end}}
+
 
         <!-- 總教練團隊 -->
 
